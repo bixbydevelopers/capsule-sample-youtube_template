@@ -1,0 +1,22 @@
+// https://bixbydevelopers.com/dev/docs/dev-guide/developers/deploying.prep-marketplace#create-your-capsule-infobxb-file
+capsule-info {
+  display-name (채널명)
+  developer-name (유튜버 이름)
+  icon-asset (images/logo.png)
+  description (유튜브 채널의 동영상을 보고 재생할 수 있는 캡슐입니다.)
+  website-url (https://www.youtube.com/channel/channel_id)
+  terms-url (https://www.youtube.com/t/terms)
+  privacy-policy-url (https://policies.google.com/privacy)
+  
+  dispatch-name (채널명)
+  dispatch-aliases {
+    alias (채널명유사1)
+    alias (채널명유사2)
+    alias (채널명유사3)
+  }
+  search-keywords{
+    keyword (채널명유사1)
+    keyword (채널명유사2) 
+    keyword (채널명유사3)
+  }
+}

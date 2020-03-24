@@ -1,0 +1,12 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (GetVideoLists) {
+      accepted-inputs ()
+      local-endpoint (getVideoLists.js)
+    }
+    action-endpoint (VideoPunchOut) {
+      accepted-inputs (results)
+      local-endpoint (videoPunchOut.js)
+    }
+  }
+}

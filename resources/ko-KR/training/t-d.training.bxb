@@ -1,0 +1,5 @@
+train (t-d24a35ap3whimvehho2dhl8bo) {
+  utterance ([g:VideoPunchOut] 유튜브 리스트 보여줄래)
+  plan (Y2BmEMtKzcurLNYrSS0uSU4sKC7NSdULLcpkUMAiHpaZkpofUJqXnOFfWsIghUVFUCqQKilmYGJgBGIGIMnIwACjAQ==)
+  last-modified (1583992583539)
+}

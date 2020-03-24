@@ -1,0 +1,92 @@
+layout-macro-def (results-compound-card) {
+	params {
+		param (results) {
+			type (Results)
+			min (Required) max (One)
+		}
+	}
+	content {
+		if (exists(results.authorname)) {
+			compound-card {
+				content {
+					image-card {
+						aspect-ratio (21:9)
+						image-url ("images/default.png")
+						title-area {
+							halign (End)
+							slot1 {
+								text {
+									style (Title_M)
+									value ("#{value(results.authorname)}")
+								}
+							}
+							slot2 {
+								single-line {
+									text {
+										style (Title_XS)
+										color (Blue)
+										value ("YouTube 채널로 이동")
+									}
+								}								
+							}							
+						}
+					}					
+          // cell-card {
+          //   slot1 {
+          //     image {
+          //       url ("images/default.png")
+          //       shape (Square)
+          //     }
+          //   }
+          //   slot2 {
+          //     content {
+          //       order (PrimarySecondary)
+          //       primary ("#{value(results.authorname)}")
+          //       secondary ("YouTube 채널로 이동")
+          //     }
+          //   }
+          // }
+				}
+			}
+		}
+		compound-card {
+			content {
+				image-card {
+					aspect-ratio (4:3)
+					image-url ("#{value(results.thumbnail)}")
+					title-area {
+						halign (Start)
+						slot1 {
+							text {
+								value ("")
+								style (Title_M)
+							}
+						}
+					}
+				}
+				paragraph {
+					value {
+						template ("#{value(results.title)}")
+					}
+					style (Detail_L)
+				}
+				single-line {
+					text {
+						value {
+							template ("#{value(results.playlisttitle)}")
+						}
+						style (Detail_M_Soft)
+					}
+				}
+				single-line {
+					text {
+						value {
+							template ("조회수 #{value(results.views)} • #{value(results.published)}")
+						}
+						style (Detail_M_Soft)
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,4 @@
+action (GetVideoLists) {
+  type (Search)
+  output (Results)
+}

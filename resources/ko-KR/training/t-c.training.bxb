@@ -1,0 +1,5 @@
+train (t-cjpi4zzajsbd4qlh6ilbtw17k) {
+  utterance ([g:VideoPunchOut] 유튜브 재생목록 찾아줘)
+  plan (Y2BmEMtKzcurLNYrSS0uSU4sKC7NSdULLcpkUMAiHpaZkpofUJqXnOFfWsIghUVFUCqQKilmYGJgBGIGIMnIwACjAQ==)
+  last-modified (1583994220636)
+}

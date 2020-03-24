@@ -1,0 +1,15 @@
+action (VideoPunchOut) {
+	type(Search)
+	collect {
+		input (results) {
+			type (Results)
+			min (Required) max (One)
+			default-init {
+				intent {
+					goal: GetVideoLists
+				}
+			}
+		}
+	}
+	output (Uri)
+}

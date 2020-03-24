@@ -1,0 +1,20 @@
+input-view {
+  match : Results (results) 
+	
+	message {
+		template ("[#{value(results[0].authorname)}]")
+	}
+	
+	render {
+  	selection-of (results) {
+			where-each (one) {
+				// layout-macro (results-compound-card) { // resources\base\layouts\Results_Compound_Card.layout.bxb
+				layout-macro (results-thumbnail-card) { // resources\base\layouts\Results_Thumbnail_Card.layout.bxb
+					param (results) {
+						expression (one)
+					}
+				}
+			}
+		}
+	}
+}

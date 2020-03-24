@@ -1,0 +1,21 @@
+capsule {
+  id (example.youtubechannel)
+  version (1.1.0)
+  format (3)
+  targets {
+    target (bixby-mobile-ko-KR)
+  }
+  runtime-version (4)
+  default-action (GetVideoLists)
+  store-countries {
+    only {
+      allow (KR)
+    }
+  }
+  device-models {
+    all
+  }
+  store-sections {
+    section (MoviesAndTV)
+  }
+}

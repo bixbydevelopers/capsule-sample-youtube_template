@@ -1,0 +1,10 @@
+train (t-ybp20zmuh5rah6hgsqqdx46ia) {
+  utterance ([g:VideoPunchOut] 동영상 띄워줘)
+  plan (Y2BmEMtKzcurLNYrSS0uSU4sKC7NSdULLcpkUMAiHpaZkpofUJqXnOFfWsIghUVFUCqQKilmYGJgBGIGIMnIwACjAQ==)
+  last-modified (1583994320140)
+}
+train (t-yggm2w4z9i3j0p9ye6dlvgep7) {
+  utterance ([g:VideoPunchOut] 영상 볼래)
+  plan (Y2BmEMtKzcurLNYrSS0uSU4sKC7NSdULLcpkUMAiHpaZkpofUJqXnOFfWsIghUVFUCqQKilmYGJgBGIGIMnIwACjAQ==)
+  last-modified (1583994365179)
+}

@@ -1,0 +1,38 @@
+structure (Results) {
+  property (playlisttitle) {
+    type (PlayListTitle)
+    min (Optional) max (One)
+  }  
+  property (authorname) {
+    type (AuthorName)
+    min (Optional) max (One)
+  }
+  property (uri) {
+    type (Uri)
+    min (Optional) max (One)
+  }  
+  property (published) {
+    type (Published)
+    min (Optional) max (One)
+  }  
+  property (linkhref) {
+    type (LinkHref)
+    min (Optional) max (One)
+  }
+  property (title) {
+    type (Title)
+    min (Optional) max (One)
+  }
+  property (videoid) {
+    type (VideoId)
+    min (Optional) max (One)
+  }
+  property (thumbnail) {
+    type (Thumbnail)
+    min (Optional) max (One)
+  }
+  property (views) {
+    type (Views)
+    min (Optional) max (One)
+  }
+}
