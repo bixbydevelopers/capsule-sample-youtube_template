@@ -61,60 +61,64 @@
  	\resources\base\views\VideoSelect.view.bxb
  ```
   -	compound-card와 thumbnail-card 중 원하는 스타일로 변경하고자 한다면 아래 부분만 수정 진행
-
- 				// layout-macro (results-compound-card) { // resources\base\layouts\Results_Compound_Card.layout.bxb
-				layout-macro (results-thumbnail-card) { // resources\base\layouts\Results_Thumbnail_Card.layout.bxb
-
+ ```js
+	// layout-macro (results-compound-card) { // resources\base\layouts\Results_Compound_Card.layout.bxb
+	layout-macro (results-thumbnail-card) { // resources\base\layouts\Results_Thumbnail_Card.layout.bxb
+ ```
 
 3.	logo, default 이미지 변경하기
  ```js
  	\assets\images\logo.png
  	\assets\images\default.png
  ```
+ 
   -	상단의 “YouTube 채널로 이동”을 아래 2가지 스타일로 가능 
   -	image-card와 cell-card 중 원하는 스타일로 변경하고자 한다면 아래 부분만 수정 진행
   -	resources\base\layouts\Results_Compound_Card.layout.bxb
-  - resources\base\layouts\Results_Thumbnail_Card.layout.bxb 
+  - 	resources\base\layouts\Results_Thumbnail_Card.layout.bxb 
+ 
+ ```js
+image-card {
+	aspect-ratio (21:9)
 
-					image-card {
-						aspect-ratio (21:9)
-						image-url ("images/default.png")
-						title-area {
-							halign (End)
-							slot1 {
-								text {
-									style (Title_M)
-									value ("#{value(results.authorname)}")
-								}
-							}
-							slot2 {
-								single-line {
-									text {
-										style (Title_XS)
-										color (Blue)
-										value ("YouTube 채널로 이동")
-									}
-								}								
-							}							
-						}
-					}
-          // cell-card {
-          //   slot1 {
-          //     image {
-          //       url ("images/default.png")
-          //       shape (Square)
-          //     }
-          //   }
-          //   slot2 {
-          //     content {
-          //       order (PrimarySecondary)
-          //       primary ("#{value(results.authorname)}")
-          //       secondary ("YouTube 채널로 이동")
-          //     }
-          //   }
-          // }    
+	image-url ("images/default.png")
+	title-area {
+		halign (End)
+		slot1 {
+			text {
+				style (Title_M)
+				value ("#{value(results.authorname)}")
+			}
+		}
+		slot2 {
+			single-line {
+				text {
+					style (Title_XS)
+					color (Blue)
+					value ("YouTube 채널로 이동")
+				}
+			}								
+		}							
+	}
+}
+  // cell-card {
+  //   slot1 {
+  //     image {
+  //       url ("images/default.png")
+  //       shape (Square)
+  //     }
+  //   }
+  //   slot2 {
+  //     content {
+  //       order (PrimarySecondary)
+  //       primary ("#{value(results.authorname)}")
+  //       secondary ("YouTube 채널로 이동")
+  //     }
+  //   }
+  // }    
  
-
+ ```
+ 
 4.	capsule-info.bxb 파일 수정 필요
   -	\resources\ko-KR\ 폴더
   - [Create Your capsule-info.bxb File](https://bixbydevelopers.com/dev/docs/dev-guide/developers/deploying.prep-marketplace#create-your-capsule-infobxb-file) 
