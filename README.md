@@ -75,7 +75,7 @@
   -	상단의 “YouTube 채널로 이동”을 아래 2가지 스타일로 가능 
   -	image-card와 cell-card 중 원하는 스타일로 변경하고자 한다면 아래 부분만 수정 진행
   -	resources\base\layouts\Results_Compound_Card.layout.bxb
-  - 	resources\base\layouts\Results_Thumbnail_Card.layout.bxb 
+  -	resources\base\layouts\Results_Thumbnail_Card.layout.bxb 
  
  ```js
 image-card {
