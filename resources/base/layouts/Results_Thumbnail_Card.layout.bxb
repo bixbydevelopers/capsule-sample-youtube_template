@@ -9,78 +9,93 @@ layout-macro-def (results-thumbnail-card) {
 		if (exists(results.authorname)) {
 			compound-card {
 				content {
-					image-card {
-						aspect-ratio (21:9)
-						image-url ("images/default.png")
-						title-area {
-							halign (End)
-							slot1 {
-								text {
-									style (Title_M)
-									value ("#{value(results.authorname)}")
-								}
-							}
-							slot2 {
-								single-line {
-									text {
-										style (Title_XS)
-										color (Blue)
-										value ("YouTube 채널로 이동")
-									}
-								}								
-							}							
-						}
-					}
-          // cell-card {
-          //   slot1 {
-          //     image {
-          //       url ("images/default.png")
-          //       shape (Square)
-          //     }
-          //   }
-          //   slot2 {
-          //     content {
-          //       order (PrimarySecondary)
-          //       primary ("#{value(results.authorname)}")
-          //       secondary ("YouTube 채널로 이동")
-          //     }
-          //   }
-          // }          
+    			if (exists(results.authorname)) {
+            image-card {
+              aspect-ratio (21:9)
+              image-url ("images/default.png")
+              title-area {
+                halign (End)
+                slot1 {
+                  text {
+                    style (Title_M)
+                    value ("#{value(results.authorname)}")
+                  }
+                }
+                slot2 {
+                  single-line {
+                    text {
+                      style (Title_XS)
+                      color (Blue)
+                      value ("YouTube 채널로 이동")
+                    }
+                  }								
+                }							
+              }
+            }
+            // cell-card {
+            //   slot1 {
+            //     image {
+            //       url ("images/default.png")
+            //       shape (Square)
+            //     }
+            //   }
+            //   slot2 {
+            //     content {
+            //       order (PrimarySecondary)
+            //       primary ("#{value(results.authorname)}")
+            //       secondary ("YouTube 채널로 이동")
+            //     }
+            //   }
+            // }     
+          }     
 				}
 			}
 		}
-    thumbnail-card {
-      image-position (Start)
-      image-url ("#{value(results.thumbnail)}")
-      title-area {
-        halign (Start)
-        slot1 {
-          text {
-            value ("#{value(results.title)}")
-            style (Detail_L)
-          }
-        }
-        slot2 {
-          single-line {
-            text {
-              value {
-                template ("#{value(results.playlisttitle)}")
+		if (exists(results.thumbnail)) {
+      thumbnail-card {
+        image-position (Start)
+        image-url ("#{value(results.thumbnail)}")
+        image-aspect-ratio (4:3)
+        title-area {
+          halign (Start)      
+          slot1 {
+            if (exists(results.title)) {
+              text {
+                value ("#{value(results.title)}")
+                style (Detail_L)
               }
-              style (Detail_M_Soft)
-            }
-          }        
-        }
-        slot3 {
-          single-line {
-            text {
-              value {
-                template ("조회수 #{value(results.views)} • #{value(results.published)}")
-              }
-              style (Detail_M_Soft)
+            } else {
+              text {
+                value ("")
+              }              
             }
           }
+          slot2 {
+            single-line {
+              if (exists(results.playlisttitle)) {
+                text {
+                  value {
+                    template ("#{value(results.playlisttitle)}")
+                  }
+                  style (Detail_M_Soft)
+                }                
+              }
+            }        
+          }
+          slot3 {
+            single-line {
+              if (exists(results.views) && exists(results.published)) {
+                text {
+                  value {
+                    template ("조회수 #{value(results.views)} • #{value(results.published)}")
+                  }
+                  style (Detail_M_Soft)
+                }
+              }
+            }
+          }
         }
-      }
+      }      
     }
 	}
 }

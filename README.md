@@ -1,16 +1,22 @@
-# YouTube 캡슐 완성하기 
+<p align="Center">
+  <img src="https://bixbydevelopers.com/dev/docs-assets/resources/dev-guide/bixby_logo_github-11221940070278028369.png">
+  <br/>
+  <h1 align="Center">Bixby Youtube Template Capsule</h1>
+</p>
+
+## YouTube 캡슐 완성하기 
 
 아래 순서를 따라가면서 자신만의 YouTube 캡슐을 완성하세요~
 
 
-# 한번 실행해 보세요. 
+## 한번 실행해 보세요. 
 
 [시뮬레이터 사용법](https://bixbydevelopers.com/dev/docs/dev-guide/developers/ide.simulator) :
 
 `[g:VideoPunchOut] 리스트 보여줘`
 
 
-## 아래 순서를 따라가면서 자신만의 YouTube 캡슐을 완성하세요~
+### 아래 순서를 따라가면서 자신만의 YouTube 캡슐을 완성하세요~
 
 1.	YouTube RSS Feed URL 추가 입력
   -	현재 코드상 총 6개까지 입력 가능하니 아래 방법으로 추가하시기 바랍니다. (최대 개수는 변경 가능)
@@ -207,22 +213,24 @@ Public Submission
 
 ## Additional Resources
 
-### Your Source for Everything Bixby
-
-* [Bixby Developer Center](https://bixbydevelopers.com) - Everything you need to get started with Bixby Development!
+### Bixby에 대한 모든 것
+* [Bixby Developer Center](http://bixbydevelopers.com) - Bixby 캡슐을 시작하기 위한 모든 것이 있습니다.
+* [Bixby Developer Portal](https://bixby.developer.samsung.com/) - Bixby 최신 소식과 이벤트 정보들을 확인하실 수 있습니다.
 
 ### Guides & Best Practices
-
-* [Quick Start Guide](https://bixbydevelopers.com/dev/docs/get-started/quick-start) - Build your first capsule
-* [Design Guides](https://bixbydevelopers.com/dev/docs/dev-guide/design-guides) - Best practices for designing your capsules
-* [Developer Guides](https://bixbydevelopers.com/dev/docs/dev-guide/developers) - Guides that take you from design and modeling all the way through deployment of your capsules
+* [Quick Start Guide](https://bixbydevelopers.com/dev/docs/get-started/quick-start) - Bixby의 첫 캡슐을 만들어보세요.
+* [Design Guides](https://bixbydevelopers.com/dev/docs/dev-guide/design-guides) - Bixby 캡슐을 디자인하기 위한 Best practices들을 배워보세요.
+* [Developer Guides](https://bixbydevelopers.com/dev/docs/dev-guide/developers) - Bixby 캡슐을 만들기 위하여 필요한 A-Z를 배울 수 있습니다.
+* [SW Expert Academy](https://swexpertacademy.com/main/learn/course/subjectList.do?courseId=BIXBY_CAPSULE) - Bixby 캡슐 개발을 위한 강의들을 보실 수 있습니다.
 
 ### Video Guides
+* [Samsung Developer Youtube](https://www.youtube.com/user/SMInnov8) - Bixby 개발과 관련된 영상들을 확인하실 수 있습니다.
+* [Bixby Developer Day Korea 2019](https://www.youtube.com/watch?v=Ty1ahLX7FlM&list=PL7PfK8Mp1rLE89RvwBh2IdCD3h6uAvgGm) - Bixby Developer Day Korea 2019에서 진행되었던 세션들을 만나보실 수 있습니다.
+* [Bixby Developer Day Korea 2018](https://www.youtube.com/playlist?list=PL7PfK8Mp1rLH0vLvT0yv5VXh_3x2bCUHl) - Bixby Developer Day Korea 2018에서 진행되었던 세션들을 만나보실 수 있습니다.
 
-* [Introduction to Bixby](https://youtu.be/DFvpK4PosvI) - Bixby and the New Exponential Frontier of Intelligent Assistants
-* [Bixby Fundamentals](https://bixby.developer.samsung.com/newsroom/en-us/22/01/2019/Teaching-Bixby-Fundamentals-What-You-Need-to-Know) - Bixby Fundamentals: What You Need to Know
 
-### Need Support?
+### 도움이 필요하신가요?
+* Bixby 커뮤니티에 참여하세요! [Bixby Developers Korea Slack](https://join.slack.com/t/bixbydeveloperskorea/shared_invite/enQtNTY2Mjc1NjUzNjA1LTYzOWYwZWE4MjExNTg4ZWUyNDg4OWViNDRiOWUyMjg0Yzg5NWI5N2NlNGU4Nzg4ZThiZGI0ZGEzZGY1OGE1MjI)
+* 기능을 추가하고 싶으신가요? [Support Community](https://support.bixbydevelopers.com/hc/en-us/community/topics/360000183273-Feature-Requests)에 기능을 건의하여 주세요. 동일한 내용을 다른 분들이 이미 올렸다면, Vote 기능을 통해 추천을 해 주세요.
+* 기술적인 지원이 필요하신가요? support@bixbydevelopers.com으로 이메일을 통하여 질문하여 주시거나 또는 [Stack Overflow](https://stackoverflow.com/questions/tagged/bixby)에 “bixby” 태그와 함께 질문하여 주세요.
 
-* Have a feature request? Please suggest it in our [Support Community](https://support.bixbydevelopers.com/hc/en-us/community/topics/360000183273-Feature-Requests) to help us prioritize.
-* Have a technical question? Ask on [Stack Overflow](https://stackoverflow.com/questions/tagged/bixby) with tag ��bixby”
