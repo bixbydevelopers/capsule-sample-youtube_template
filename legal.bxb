@@ -2,11 +2,8 @@
 legal {
   country-documents {
     store-country (KR)
-    terms-and-conditions { // 이용 약관
-      url(https://www.youtube.com/t/terms)
-    }
     privacy-policy { // 개인정보 처리 방침
-      url(https://policies.google.com/privacy?hl=ko&gl=kr)
+      url() // 개인정보 처리방침 생성 -> 웹에 게시 -> url 정보 여기에 작성 필요 
     }    
   }
 }

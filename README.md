@@ -138,8 +138,7 @@ capsule-info {
   icon-asset (images/logo.png)
   description (유튜브 채널의 동영상을 보고 재생할 수 있는 캡슐입니다.)
   website-url (https://www.youtube.com/channel/channel_id)
-  terms-url (https://www.youtube.com/t/terms)
-  privacy-policy-url (https://policies.google.com/privacy)
+  privacy-policy-url () // 개인정보 처리방침 생성 -> 웹에 게시 -> url 정보 여기에 작성 필요 
   
   dispatch-name (채널명)
   dispatch-aliases {
@@ -156,7 +155,7 @@ capsule-info {
  ```
 
 
-5.	Channel.hints.bxb 파일 수정 필요
+5.	channel.hints.bxb 파일 수정 필요
   -	\resources\ko-KR\ 폴더 
   -	[Provide Hints for Bixby](https://bixbydevelopers.com/dev/docs/dev-guide/developers/deploying.prep-marketplace#provide-hints-for-bixby) 
 	참고하여 각 캡슐에 맞게 변경 필요
@@ -173,7 +172,7 @@ hints {
 ```
 
  
-6.	Legal.bxb 파일 수정 필요
+6.	legal.bxb 파일 수정 필요
   -	캡슐 root 폴더 
   -	[Provide Legal Agreements](https://bixbydevelopers.com/dev/docs/dev-guide/developers/deploying.prep-marketplace#provide-legal-agreements)
   - [Privacy Policy Guidelines (KR)](https://bixbydevelopers.com/dev/docs/dev-guide/developers/deploying.privacy-policy-kr)
@@ -184,11 +183,8 @@ hints {
 legal {
   country-documents {
     store-country (KR)
-    terms-and-conditions { // 이용 약관
-      url(https://www.youtube.com/t/terms)
-    }
     privacy-policy { // 개인정보 처리 방침
-      url(https://policies.google.com/privacy?hl=ko&gl=kr)
+      url() // 개인정보 처리방침 생성 -> 웹에 게시 -> url 정보 여기에 작성 필요 
     }    
   }
 }

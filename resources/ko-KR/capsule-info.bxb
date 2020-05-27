@@ -5,8 +5,7 @@ capsule-info {
   icon-asset (images/logo.png)
   description (유튜브 채널의 동영상을 보고 재생할 수 있는 캡슐입니다.)
   website-url (https://www.youtube.com/channel/channel_id)
-  terms-url (https://www.youtube.com/t/terms)
-  privacy-policy-url (https://policies.google.com/privacy)
+  privacy-policy-url () // 개인정보 처리방침 생성 -> 웹에 게시 -> url 정보 여기에 작성 필요 
   
   dispatch-name (채널명)
   dispatch-aliases {

@@ -5,8 +5,8 @@ capsule {
   targets {
     target (bixby-mobile-ko-KR)
   }
-  runtime-version (4)
-  default-action (GetVideoLists)
+  runtime-version (7)
+  default-action (VideoPunchOut)
   store-countries {
     only {
       allow (KR)
